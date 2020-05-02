@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#0d27e4</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#21ebe9</color>
+    <color name="tab_highlight">#daeafc</color>
+    <color name="white">#FFFFFF</color>
+    <color name="yellow">#eed202</color>
+    <color name="text_violet">#979cff</color>
+    <color name="black">#000000</color>
+    <color name="grey">#5C5B5B</color>
+    <color name="tab">#1168cd</color>
+
+    <color name="text_caretogether_2">#0E68CD</color>
+    <color name="gray">#D7D5D5</color>
+    <color name="red">#aa031c</color>
+    <color name="red2">#FC0931</color>
+    <color name="blue_Dark">#0d27e4</color>
+    <color name="green">#32CD32</color>
+</resources>

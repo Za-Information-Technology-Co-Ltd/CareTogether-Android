@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.AboutApplication2Activity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@drawable/color_green_blue">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/back_arrow_icon"
+            android:layout_marginLeft="16dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"/>
+
+        <com.za.caretogether.widgets.MMTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="Application အကြောင်း"
+            android:layout_centerInParent="true"
+            android:textColor="@color/white"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/news_layout">
+
+        <WebView
+            android:id="@+id/webview_about_situation"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <com.za.caretogether.widgets.MMTextView
+            android:id="@+id/require_about_internet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="20dp"
+            android:gravity="center_horizontal"
+            android:paddingLeft="26dp"
+            android:textColor="@color/white"
+            android:paddingTop="46dp"
+            android:paddingRight="26dp"
+            android:paddingBottom="46dp"
+            android:text="@string/require_internet2"
+            android:textAlignment="center"
+            android:textSize="16sp"
+            android:visibility="visible" />
+
+    </RelativeLayout>
+
+</LinearLayout>

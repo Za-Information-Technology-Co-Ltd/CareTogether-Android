@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    app:cardElevation="2dp"
+    app:cardCornerRadius="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.za.caretogether.widgets.MMTextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:drawableLeft="@drawable/ic_local_phone_black_24dp"
+                android:gravity="center"
+                android:text="ဆက်သွယ်ရမည့်ဖုန်းနံပါတ်"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/close_cancel"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:tint="@color/black"
+                android:src="@drawable/ic_close_black_24dp" />
+        </LinearLayout>
+
+        <GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:columnCount="2"
+            android:rowCount="2">
+
+            <TextView
+                android:id="@+id/receiver0"
+                android:layout_width="120dp"
+                android:layout_height="45dp"
+                android:layout_row="0"
+                android:layout_column="0"
+                android:layout_margin="5dp"
+                android:background="@drawable/round_bg_blue_10dp"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/receiver1"
+                android:layout_width="120dp"
+                android:layout_height="45dp"
+                android:layout_row="0"
+                android:layout_column="1"
+                android:layout_margin="5dp"
+                android:background="@drawable/round_bg_blue_10dp"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/receiver2"
+                android:layout_width="120dp"
+                android:layout_height="45dp"
+                android:layout_row="1"
+                android:layout_column="0"
+                android:layout_margin="5dp"
+                android:background="@drawable/round_bg_blue_10dp"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/receiver3"
+                android:layout_width="120dp"
+                android:layout_height="45dp"
+                android:layout_row="1"
+                android:layout_column="1"
+                android:layout_margin="5dp"
+                android:background="@drawable/round_bg_blue_10dp"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+        </GridLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

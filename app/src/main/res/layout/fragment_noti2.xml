@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@mipmap/intro_background"
+    android:orientation="vertical"
+    tools:context=".fragments.Noti2Fragment">
+
+<!--    <com.za.caretogether.widgets.MMTextView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:id="@+id/require_internet"-->
+<!--        android:layout_centerInParent="true"-->
+<!--        android:textSize="16sp"-->
+<!--        android:textAlignment="center"-->
+<!--        android:layout_marginRight="20dp"-->
+<!--        android:layout_marginLeft="20dp"-->
+<!--        android:visibility="gone"-->
+<!--        android:background="@drawable/round_bg_white_10dp"-->
+<!--        android:paddingTop="46dp"-->
+<!--        android:paddingBottom="46dp"-->
+<!--        android:paddingLeft="26dp"-->
+<!--        android:paddingRight="26dp"-->
+<!--        android:text="@string/require_internet2"-->
+<!--        android:gravity="center_horizontal" />-->
+
+<!--    <androidx.cardview.widget.CardView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginLeft="16dp"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:layout_marginRight="16dp"-->
+<!--        android:layout_marginBottom="12dp"-->
+<!--        app:cardCornerRadius="12dp"-->
+<!--        app:cardElevation="2dp">-->
+
+<!--        <LinearLayout-->
+<!--            android:id="@+id/search"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:background="@color/white"-->
+<!--            android:orientation="horizontal"-->
+<!--            android:weightSum="2">-->
+
+<!--            <LinearLayout-->
+<!--                android:id="@+id/menu_news"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="50dp"-->
+<!--                android:layout_weight="1"-->
+<!--                android:layout_margin="1dp"-->
+<!--                android:background="@drawable/round_bg_tab"-->
+<!--                android:gravity="center"-->
+<!--                android:orientation="horizontal">-->
+
+<!--                <ImageView-->
+<!--                    android:layout_width="28dp"-->
+<!--                    android:layout_height="28dp"-->
+<!--                    android:layout_marginRight="8dp"-->
+<!--                    android:src="@drawable/news" />-->
+
+<!--                <com.za.caretogether.widgets.MMTextView-->
+<!--                    android:id="@+id/tv_news"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:gravity="center"-->
+<!--                    android:text="သတင်းများ"-->
+<!--                    android:textColor="@color/white"-->
+<!--                    android:textSize="16dp" />-->
+<!--            </LinearLayout>-->
+
+<!--            <LinearLayout-->
+<!--                android:id="@+id/menu_video"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="50dp"-->
+<!--                android:layout_weight="1"-->
+<!--                android:layout_margin="1dp"-->
+<!--                android:gravity="center"-->
+<!--                android:orientation="horizontal">-->
+
+<!--                <ImageView-->
+<!--                    android:layout_width="28dp"-->
+<!--                    android:layout_height="28dp"-->
+<!--                    android:layout_marginRight="8dp"-->
+<!--                    android:src="@drawable/video" />-->
+
+<!--                <com.za.caretogether.widgets.MMTextView-->
+<!--                    android:id="@+id/tv_video"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_margin="1dp"-->
+<!--                    android:gravity="center"-->
+<!--                    android:text="ဗီဒီယိုများ"-->
+<!--                    android:textColor="@color/black"-->
+<!--                    android:textSize="16dp" />-->
+<!--            </LinearLayout>-->
+<!--        </LinearLayout>-->
+<!--    </androidx.cardview.widget.CardView>-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/news_layout">
+
+        <WebView
+            android:id="@+id/webview_news"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <LinearLayout
+            android:id="@+id/loading_indicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:layout_centerInParent="true"
+            android:background="@color/white"
+            android:layout_gravity="center">
+
+            <ProgressBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="visible" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/waiting"
+                android:textColor="@color/black"
+                android:textSize="24dp" />
+        </LinearLayout>
+
+
+        <com.za.caretogether.widgets.MMTextView
+            android:id="@+id/require_news_internet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="20dp"
+            android:gravity="center_horizontal"
+            android:paddingLeft="26dp"
+            android:textColor="@color/white"
+            android:paddingTop="46dp"
+            android:paddingRight="26dp"
+            android:paddingBottom="46dp"
+            android:text="@string/require_internet2"
+            android:textAlignment="center"
+            android:textSize="16sp"
+            android:visibility="visible" />
+
+    </RelativeLayout>
+
+<!--    <RelativeLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:id="@+id/videos_layout">-->
+
+<!--        <WebView-->
+<!--            android:id="@+id/webview_videos_situation"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"/>-->
+
+<!--        <com.za.caretogether.widgets.MMTextView-->
+<!--            android:id="@+id/require_video_internet"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginLeft="20dp"-->
+<!--            android:layout_centerInParent="true"-->
+<!--            android:layout_marginRight="20dp"-->
+<!--            android:gravity="center_horizontal"-->
+<!--            android:paddingLeft="26dp"-->
+<!--            android:textColor="@color/white"-->
+<!--            android:paddingTop="46dp"-->
+<!--            android:paddingRight="26dp"-->
+<!--            android:paddingBottom="46dp"-->
+<!--            android:text="@string/require_internet2"-->
+<!--            android:textAlignment="center"-->
+<!--            android:textSize="16sp"-->
+<!--            android:visibility="visible" />-->
+
+<!--    </RelativeLayout>-->
+
+</LinearLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/intro_background"
+    android:orientation="vertical"
+    tools:context=".fragments.ToAvoid2Fragment">
+
+    <WebView
+        android:id="@+id/webview_avoid_situation"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <LinearLayout
+        android:id="@+id/loading_indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:layout_centerInParent="true"
+        android:background="@color/white"
+        android:layout_gravity="center">
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="visible" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/waiting"
+            android:textColor="@color/black"
+            android:textSize="24dp" />
+    </LinearLayout>
+
+
+    <com.za.caretogether.widgets.MMTextView
+        android:id="@+id/require_avoid_internet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_centerInParent="true"
+        android:layout_marginRight="20dp"
+        android:gravity="center_horizontal"
+        android:paddingLeft="26dp"
+        android:textColor="@color/white"
+        android:paddingTop="46dp"
+        android:paddingRight="26dp"
+        android:paddingBottom="46dp"
+        android:text="@string/require_internet2"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:visibility="visible" />
+
+</RelativeLayout>

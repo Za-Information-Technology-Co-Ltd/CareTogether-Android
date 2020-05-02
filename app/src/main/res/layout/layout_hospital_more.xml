@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/ll_hospital"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_marginLeft="8dp"
+    android:layout_marginRight="8dp"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="12.2"
+        android:orientation="horizontal"
+        android:layout_margin="8dp">
+
+        <com.za.caretogether.widgets.MMTextView
+            android:id="@+id/tv_hospital"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3.8"
+            android:textSize="12sp"
+            android:textColor="@color/black" />
+
+        <com.za.caretogether.widgets.MMTextView
+            android:id="@+id/tv_qurantine"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.9"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:gravity="right"
+            android:textSize="12sp"
+            android:textColor="@color/black" />
+
+        <com.za.caretogether.widgets.MMTextView
+            android:id="@+id/tv_suspect"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.3"
+            android:gravity="right"
+            android:textSize="12sp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:textColor="@color/tab" />
+
+        <com.za.caretogether.widgets.MMTextView
+            android:id="@+id/tv_confirm"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.1"
+            android:gravity="right"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:textSize="12sp"
+            android:textColor="@color/red" />
+
+        <com.za.caretogether.widgets.MMTextView
+            android:id="@+id/tv_negative"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.2"
+            android:gravity="right"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:textSize="12sp"
+            android:textColor="@color/green" />
+
+        <com.za.caretogether.widgets.MMTextView
+            android:id="@+id/tv_death"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.2"
+            android:gravity="right"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:textSize="12sp"
+            android:textColor="@color/red" />
+
+        <com.za.caretogether.widgets.MMTextView
+            android:id="@+id/tv_pending"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="right"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:textSize="12sp"
+            android:textColor="@color/black"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

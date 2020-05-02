@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/intro_background"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+    <com.za.caretogether.widgets.MMTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/title_location_sharing_off"
+        android:textColor="@color/text_caretogether_2"
+        android:textSize="26dp"
+        android:textStyle="bold" />
+
+    <com.za.caretogether.widgets.MMTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:lineSpacingExtra="5dp"
+        android:gravity="center"
+        android:text="@string/b1_location_sharing_off"
+        android:textColor="@color/white"
+        android:textSize="18dp" />
+
+    <ImageView
+        android:layout_width="64dp"
+        android:layout_height="74dp"
+        android:layout_marginTop="36dp"
+        android:src="@mipmap/ic_location_sharing" />
+
+    <com.za.caretogether.widgets.MMTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:gravity="center"
+        android:lineSpacingExtra="5dp"
+        android:text="@string/b2_location_sharing_off"
+        android:textColor="@color/white"
+        android:textSize="17dp" />
+
+        <com.za.caretogether.widgets.MMButton
+            android:id="@+id/btnPermissionOn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="36dp"
+            android:textSize="18dp"
+            android:textColor="@color/black"
+            android:paddingLeft="24dp"
+            android:paddingRight="24dp"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp"
+            android:background="@drawable/round_bg_btn_yellow_10dp"
+            android:text="သုံးစွဲခွင့် ပြုမည်" />
+
+    </LinearLayout>
+</LinearLayout>

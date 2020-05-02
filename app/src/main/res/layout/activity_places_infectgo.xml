@@ -1,0 +1,586 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#f2f2f2"
+    tools:context=".activities.PlacesInfectgoActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@drawable/color_green_blue">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/back_arrow_icon"
+            android:layout_marginLeft="16dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"/>
+
+        <com.za.caretogether.widgets.MMTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:text="ရောဂါပိုးရှိသူများသွားရောက်ခဲ့သည့်နေရာများ"
+            android:layout_centerInParent="true"
+            android:textColor="@color/white"/>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="10dp">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="2dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <com.za.caretogether.widgets.MMTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="လက်ရှိကျန်းမာရေးအခြေအနေ"
+                        android:textSize="17sp"
+                        android:textColor="@color/black"
+                        android:layout_gravity="center_horizontal"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center_vertical"
+                        android:weightSum="3">
+
+                        <com.za.caretogether.widgets.MMTextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.7"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:text="ဖျားနားခြင်းရှိ/မရှိ"/>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.3"
+                            app:cardElevation="2dp"
+                            android:layout_margin="5dp"
+                            app:cardCornerRadius="10dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:padding="16dp"
+                                android:orientation="horizontal">
+
+                                <com.za.caretogether.widgets.MMTextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/black"
+                                    android:textSize="14sp"
+                                    android:text="မရှိ" />
+
+                                <androidx.appcompat.widget.SwitchCompat
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:layout_marginLeft="8dp"
+                                    android:layout_marginRight="8dp"/>
+
+                                <com.za.caretogether.widgets.MMTextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:layout_gravity="center"
+                                    android:textColor="@color/black"
+                                    android:textSize="14sp"
+                                    android:text="ရှိ"/>
+
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center_vertical"
+                        android:weightSum="3">
+
+                        <com.za.caretogether.widgets.MMTextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.7"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:text="အသက်ရှူကြပ်ခြင်းရှိ/မရှိ"/>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.3"
+                            app:cardElevation="2dp"
+                            android:layout_margin="5dp"
+                            app:cardCornerRadius="10dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="16dp"
+                                android:gravity="center_horizontal"
+                                android:orientation="horizontal">
+
+                                <com.za.caretogether.widgets.MMTextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/black"
+                                    android:textSize="14sp"
+                                    android:text="မရှိ" />
+
+                                <androidx.appcompat.widget.SwitchCompat
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:layout_marginLeft="8dp"
+                                    android:layout_marginRight="8dp"/>
+
+                                <com.za.caretogether.widgets.MMTextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:layout_gravity="center"
+                                    android:textColor="@color/black"
+                                    android:textSize="14sp"
+                                    android:text="ရှိ"/>
+
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center_vertical"
+                        android:weightSum="3">
+
+                        <com.za.caretogether.widgets.MMTextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.7"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:text="ဝမ်းလျောခြင်းရှိ/မရှိ"/>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.3"
+                            app:cardElevation="2dp"
+                            android:layout_margin="5dp"
+                            app:cardCornerRadius="10dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:padding="16dp"
+                                android:orientation="horizontal">
+
+                                <com.za.caretogether.widgets.MMTextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/black"
+                                    android:textSize="14sp"
+                                    android:text="မရှိ" />
+
+                                <androidx.appcompat.widget.SwitchCompat
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:layout_marginLeft="8dp"
+                                    android:layout_marginRight="8dp"/>
+
+                                <com.za.caretogether.widgets.MMTextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:layout_gravity="center"
+                                    android:textColor="@color/black"
+                                    android:textSize="14sp"
+                                    android:text="ရှိ"/>
+
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+
+                app:cardCornerRadius="10dp"
+                app:cardElevation="2dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <com.za.caretogether.widgets.MMTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="ရောဂါကူးစက်မှုဖြစ်ပွားနေချိန်အတွင်း ခံစားရသော ကျန်းမာရေးအခြေအနေများကို မျှဝေမည်"
+                        android:textSize="16sp"
+                        android:textColor="@color/black"
+                        android:textAlignment="center"
+                        android:gravity="center_horizontal"
+                        />
+
+                    <com.za.caretogether.widgets.MMEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="330dp"
+                        android:background="@drawable/gray_line_10dp"
+                        android:layout_marginTop="10dp"
+                        android:hint="ဤနေရာတွင်ရေးသားရန်"
+                        android:textSize="14sp"
+                        android:textAlignment="viewStart"
+                        android:padding="10dp"
+                        android:gravity="start" />
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <com.za.caretogether.widgets.MMButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_send"
+                android:layout_margin="16dp"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:text="မျှဝေမည်"
+                android:background="@drawable/round_bg_btn_yellow_10dp"/>
+
+
+            <!--            <com.za.caretogether.widgets.MMTextView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="အတည်ပြုလူနာများ သွားလာခဲ့သည့် နေရာများကို ရောက်ရှိခဲ့မှု စစ်ဆေးပါရန်"-->
+<!--                android:textSize="16sp"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textAlignment="center"-->
+<!--                android:layout_margin="16dp"-->
+<!--                android:gravity="center_horizontal" />-->
+
+<!--            <androidx.cardview.widget.CardView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                app:cardCornerRadius="10dp"-->
+<!--                app:cardElevation="2dp"-->
+<!--                android:layout_marginBottom="20dp">-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:orientation="vertical">-->
+
+<!--                    <RelativeLayout-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:orientation="horizontal"-->
+<!--                        android:padding="12dp">-->
+
+<!--                        <com.za.caretogether.widgets.MMTextView-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:text="Yangon"-->
+<!--                            android:textSize="18sp"-->
+<!--                            android:paddingLeft="5dp"-->
+<!--                            android:textColor="@color/black"/>-->
+
+<!--                        <ImageView-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:id="@+id/expend_less"-->
+<!--                            android:visibility="gone"-->
+<!--                            android:src="@drawable/ic_expand_more_black_24dp"-->
+<!--                            android:layout_alignParentRight="true"-->
+<!--                            android:paddingRight="5dp"/>-->
+
+<!--                        <ImageView-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:id="@+id/expand_more"-->
+<!--                            android:src="@drawable/ic_expand_less_black_24dp"-->
+<!--                            android:layout_alignParentRight="true"-->
+<!--                            android:visibility="visible"-->
+<!--                            android:paddingRight="5dp"/>-->
+
+<!--                    </RelativeLayout>-->
+
+<!--                    <RelativeLayout-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:id="@+id/in_expend_layout"-->
+<!--                        android:orientation="horizontal"-->
+<!--                        android:paddingLeft="16dp"-->
+<!--                        android:paddingRight="16dp"-->
+<!--                        android:paddingTop="5dp"-->
+<!--                        android:visibility="gone"-->
+<!--                        android:paddingBottom="10dp">-->
+
+<!--                        <com.za.caretogether.widgets.MMTextView-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:text="Insein"-->
+<!--                            android:textSize="16sp"-->
+<!--                            android:paddingLeft="5dp"-->
+<!--                            android:textColor="@color/black"/>-->
+
+<!--                        <ImageView-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:id="@+id/in_expend_less"-->
+<!--                            android:visibility="gone"-->
+<!--                            android:src="@drawable/ic_expand_more_black_24dp"-->
+<!--                            android:layout_alignParentRight="true"-->
+<!--                            android:paddingRight="5dp"/>-->
+
+<!--                        <ImageView-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:id="@+id/in_expand_more"-->
+<!--                            android:src="@drawable/ic_expand_less_black_24dp"-->
+<!--                            android:layout_alignParentRight="true"-->
+<!--                            android:visibility="visible"-->
+<!--                            android:paddingRight="5dp"/>-->
+
+<!--                    </RelativeLayout>-->
+
+<!--                    <LinearLayout-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:id="@+id/layout_go_detail"-->
+<!--                        android:visibility="gone"-->
+<!--                        android:orientation="vertical">-->
+
+<!--                        <View-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="1dp"-->
+<!--                            android:background="@color/gray"-->
+<!--                            android:layout_marginLeft="10dp"-->
+<!--                            android:layout_marginRight="10dp"-->
+<!--                            android:layout_marginBottom="10dp"/>-->
+
+<!--                        <LinearLayout-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:orientation="vertical"-->
+<!--                            android:layout_marginBottom="16dp">-->
+
+<!--                            <RelativeLayout-->
+<!--                                android:layout_width="match_parent"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:layout_marginLeft="16dp"-->
+<!--                                android:layout_marginRight="16dp"-->
+<!--                                >-->
+
+<!--                                <com.za.caretogether.widgets.MMTextView-->
+<!--                                    android:layout_width="wrap_content"-->
+<!--                                    android:layout_height="wrap_content"-->
+<!--                                    android:layout_alignParentLeft="true"-->
+<!--                                    android:layout_centerVertical="true"-->
+<!--                                    android:textColor="@color/black"-->
+<!--                                    android:textSize="16sp"-->
+<!--                                    android:text="Shwe Kaung Kywel Tea Shop"/>-->
+
+<!--                                <ImageView-->
+<!--                                    android:layout_width="24dp"-->
+<!--                                    android:layout_height="24dp"-->
+<!--                                    android:src="@drawable/navigation"-->
+<!--                                    android:layout_alignParentRight="true"-->
+<!--                                    android:layout_centerVertical="true"/>-->
+
+<!--                            </RelativeLayout>-->
+
+<!--                            <com.za.caretogether.widgets.MMTextView-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:layout_marginLeft="16dp"-->
+<!--                                android:textSize="14sp"-->
+<!--                                android:text="Hlaing Station Rd, Yangon"/>-->
+
+<!--                            <LinearLayout-->
+<!--                                android:layout_width="match_parent"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:weightSum="2"-->
+<!--                                android:layout_marginLeft="16dp"-->
+<!--                                android:layout_marginRight="16dp"-->
+<!--                                android:layout_marginTop="10dp"-->
+<!--                                android:layout_marginBottom="10dp"-->
+
+<!--                                android:orientation="horizontal">-->
+
+<!--                                <com.za.caretogether.widgets.MMTextView-->
+<!--                                    android:layout_width="0dp"-->
+<!--                                    android:layout_height="wrap_content"-->
+<!--                                    android:layout_weight="1"-->
+<!--                                    android:elevation="2dp"-->
+<!--                                    android:text="နေ့ရက်"-->
+<!--                                    android:textColor="@color/black"-->
+<!--                                    android:textSize="16sp"-->
+<!--                                    android:padding="10dp"-->
+<!--                                    android:drawableRight="@drawable/calendar_size"-->
+<!--                                    android:layout_margin="5dp"-->
+<!--                                    android:layout_marginRight="5dp"-->
+<!--                                    android:background="@drawable/round_bg_white_10dp"/>-->
+
+<!--                                <com.za.caretogether.widgets.MMTextView-->
+<!--                                    android:layout_width="0dp"-->
+<!--                                    android:layout_height="wrap_content"-->
+<!--                                    android:layout_weight="1"-->
+<!--                                    android:elevation="2dp"-->
+<!--                                    android:padding="10dp"-->
+<!--                                    android:textSize="16sp"-->
+<!--                                    android:layout_gravity="center_vertical"-->
+<!--                                    android:text="အချိန်"-->
+<!--                                    android:drawableRight="@drawable/clock_size"-->
+<!--                                    android:layout_margin="5dp"-->
+<!--                                    android:layout_marginLeft="5dp"-->
+<!--                                    android:textColor="@color/black"-->
+<!--                                    android:background="@drawable/round_bg_white_10dp"/>-->
+
+<!--                            </LinearLayout>-->
+
+<!--                        </LinearLayout>-->
+
+<!--                        <LinearLayout-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:orientation="vertical"-->
+<!--                            android:padding="10dp"-->
+<!--                            android:layout_marginLeft="16dp"-->
+<!--                            android:layout_marginRight="16dp"-->
+<!--                            android:layout_marginBottom="10dp"-->
+<!--                            android:background="@drawable/gray_line_10dp"-->
+<!--                            >-->
+
+<!--                            <com.za.caretogether.widgets.MMTextView-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:text="မှတ်ချက်"-->
+<!--                                android:paddingLeft="10dp"-->
+<!--                                android:textColor="@color/black"-->
+<!--                                android:textSize="16sp"/>-->
+
+<!--                            <com.za.caretogether.widgets.MMEditText-->
+<!--                                android:layout_width="match_parent"-->
+<!--                                android:layout_height="100dp"-->
+<!--                                android:background="@null"/>-->
+
+<!--                        </LinearLayout>-->
+
+<!--                    </LinearLayout>-->
+
+<!--                </LinearLayout>-->
+
+<!--            </androidx.cardview.widget.CardView>-->
+
+<!--            <androidx.cardview.widget.CardView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                app:cardCornerRadius="10dp"-->
+<!--                app:cardElevation="2dp"-->
+<!--                android:layout_marginBottom="20dp">-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:orientation="vertical">-->
+
+<!--                    <RelativeLayout-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:orientation="horizontal"-->
+<!--                        android:padding="12dp">-->
+
+<!--                        <com.za.caretogether.widgets.MMTextView-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:text="Mandalay"-->
+<!--                            android:textSize="18sp"-->
+<!--                            android:paddingLeft="5dp"-->
+<!--                            android:textColor="@color/black"/>-->
+
+<!--                        <ImageView-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:id="@+id/expend_less_one"-->
+<!--                            android:visibility="gone"-->
+<!--                            android:src="@drawable/ic_expand_more_black_24dp"-->
+<!--                            android:layout_alignParentRight="true"-->
+<!--                            android:paddingRight="5dp"/>-->
+
+<!--                        <ImageView-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:id="@+id/expand_more_one"-->
+<!--                            android:src="@drawable/ic_expand_less_black_24dp"-->
+<!--                            android:layout_alignParentRight="true"-->
+<!--                            android:visibility="visible"-->
+<!--                            android:paddingRight="5dp"/>-->
+
+<!--                    </RelativeLayout>-->
+
+
+<!--                </LinearLayout>-->
+
+<!--            </androidx.cardview.widget.CardView>-->
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

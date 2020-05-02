@@ -1,0 +1,488 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/intro_background"
+    tools:context=".fragments.AccountFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="54dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/ll_update"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="16dp"
+                android:alpha="0.9"
+                android:background="@drawable/round_bg_primary_10dp"
+                android:padding="12dp">
+
+                <com.za.caretogether.widgets.MMTextView
+                    android:id="@+id/update_available"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="26dp"
+                android:layout_marginRight="26dp"
+                android:layout_marginTop="16dp">
+
+                <com.za.caretogether.widgets.MMTextView
+                    android:id="@+id/user_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:drawableLeft="@drawable/ic_phone"
+                    android:drawablePadding="10dp"
+                    android:text="09123456789"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/img_locale"
+                    android:layout_width="50dp"
+                    android:layout_height="34dp"
+                    android:layout_centerVertical="true"
+                    android:scaleType="fitXY"
+                    android:layout_toLeftOf="@+id/img_unlink"
+                    android:padding="5dp"
+                    android:layout_marginRight="12dp"
+                    android:src="@drawable/ic_my" />
+
+                <ImageView
+                    android:id="@+id/img_unlink"
+                    android:layout_width="34dp"
+                    android:layout_height="36dp"
+                    android:layout_centerVertical="true"
+                    android:scaleType="fitXY"
+                    android:layout_toLeftOf="@+id/img_connection"
+                    android:padding="5dp"
+                    android:background="@drawable/round_bg_circle_white"
+                    android:layout_marginRight="12dp"
+                    android:src="@drawable/unlink_icon" />
+
+
+                <ImageView
+                    android:id="@+id/img_connection"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/round_bg_circle_white"
+                    android:padding="5dp"
+                    android:src="@drawable/ic_wifi_not_connect" />
+
+            </RelativeLayout>
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/caretogether_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/title"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="10dp"
+                android:visibility="visible"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="4dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@mipmap/intro_back"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <com.za.caretogether.widgets.MMTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:gravity="center_vertical"
+                            android:shadowColor="@color/white"
+                            android:shadowDx="3"
+                            android:shadowDy="3"
+                            android:shadowRadius="4"
+                            android:text="Care Together"
+                            android:textColor="#174DE8"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                        <com.za.caretogether.widgets.MMTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginBottom="3dp"
+                            android:gravity="center_vertical"
+                            android:shadowColor="@color/white"
+                            android:shadowDx="3"
+                            android:shadowDy="3"
+                            android:shadowRadius="4"
+                            android:text="2.4"
+                            android:textColor="#174DE8"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <com.za.caretogether.widgets.MMTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:shadowColor="@color/white"
+                        android:shadowDx="3"
+                        android:shadowDy="3"
+                        android:shadowRadius="4"
+                        android:text="@string/title_account"
+                        android:textColor="#174DE8"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                android:id="@+id/ll_permission"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="10dp"
+                android:alpha="0.9"
+                android:background="@drawable/round_bg_primary_10dp"
+                android:padding="12dp">
+
+                <com.za.caretogether.widgets.MMTextView
+                    android:id="@+id/turn_permission_on"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/count_caretogether"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ll_permission"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/round_bg_white_10dp">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginRight="16dp"
+                    android:src="@drawable/ic_question"
+                    android:textSize="28sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <ImageView
+                        android:id="@+id/img_pleasing"
+                        android:layout_width="42dp"
+                        android:layout_height="42dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="5dp"
+                        android:src="@drawable/ic_radar"
+                        android:textSize="28sp"
+                        android:textStyle="bold"
+                        android:visibility="visible" />
+
+                    <!--                <com.za.caretogether.widgets.MMTextView-->
+                    <!--                    android:id="@+id/contact_count"-->
+                    <!--                    android:layout_width="wrap_content"-->
+                    <!--                    android:layout_height="wrap_content"-->
+                    <!--                    android:drawablePadding="10dp"-->
+                    <!--                    android:layout_marginTop="8dp"-->
+                    <!--                    android:layout_marginBottom="5dp"-->
+                    <!--                    android:layout_gravity="center_horizontal"-->
+                    <!--                    android:textStyle="bold"-->
+                    <!--                    android:textSize="28sp"-->
+                    <!--                    android:textColor="@color/text_caretogether_2"/>-->
+
+                    <com.za.caretogether.widgets.MMTextView
+                        android:id="@+id/contact_count"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:gravity="center_horizontal"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+            </RelativeLayout>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_warning"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/round_bg_white_10dp"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:visibility="visible"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="2dp">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginBottom="4dp"
+                            android:src="@drawable/check_icon" />
+
+                        <com.za.caretogether.widgets.MMTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginRight="16dp"
+                            android:layout_marginBottom="24dp"
+                            android:gravity="left"
+                            android:lineSpacingExtra="1dp"
+                            android:text="@string/no_contact_with_confirm"
+                            android:textColor="@color/black"
+                            android:textSize="16sp" />
+
+                    </LinearLayout>
+
+                </FrameLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <com.za.caretogether.widgets.MMTextView
+                android:id="@+id/require_internet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/count_caretogether"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/round_bg_white_10dp"
+                android:gravity="center_horizontal"
+                android:padding="26dp"
+                android:text="@string/require_internet"
+                android:textAlignment="center"
+                android:textSize="16sp"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/count_caretogether2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/count_caretogether"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/round_bg_white_10dp"
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="42dp"
+                    android:layout_height="42dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="5dp"
+                    android:src="@drawable/ic_smiley"
+                    android:textSize="28sp"
+                    android:textStyle="bold" />
+
+                <com.za.caretogether.widgets.MMTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="16dp"
+                    android:gravity="center_horizontal"
+                    android:text="@string/count_caretogether_touched"
+                    android:textColor="@color/grey"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <!--            <com.za.caretogether.widgets.MMTextView-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:id="@+id/count_caretogether_touched"-->
+            <!--                android:layout_below="@+id/count_caretogether"-->
+            <!--                android:textSize="16sp"-->
+            <!--                android:visibility="gone"-->
+            <!--                android:textAlignment="center"-->
+            <!--                android:layout_marginRight="20dp"-->
+            <!--                android:layout_marginLeft="20dp"-->
+            <!--                android:layout_marginTop="16dp"-->
+            <!--                android:background="@drawable/round_bg_white_10dp"-->
+            <!--                android:padding="26dp"-->
+            <!--                android:text="@string/count_caretogether_touched"-->
+            <!--                android:gravity="center_horizontal" />-->
+
+            <LinearLayout
+                android:id="@+id/ll_caretogether_suspect"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/count_caretogether"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/round_bg_red_10dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="10dp"
+                    android:src="@drawable/caretogether_virus_icon" />
+
+                <com.za.caretogether.widgets.MMTextView
+                    android:id="@+id/tv_count_suspect"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="8dp"
+                    android:gravity="center_horizontal"
+                    android:text="@string/identified_caretogether"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+
+                <com.za.caretogether.widgets.MMTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="16dp"
+                    android:text="@string/safe_one"
+                    android:textColor="@color/white" />
+
+                <com.za.caretogether.widgets.MMTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="16dp"
+                    android:text="@string/safe_two"
+                    android:textColor="@color/white" />
+
+                <com.za.caretogether.widgets.MMTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="16dp"
+                    android:text="@string/safe_three"
+                    android:textColor="@color/white" />
+
+                <com.za.caretogether.widgets.MMTextView
+                    android:id="@+id/info_safe_four"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="26dp"
+                    android:text="@string/safe_four"
+                    android:textColor="@color/white" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="16dp">
+
+        <com.za.caretogether.widgets.MMTextView
+            android:id="@+id/about_app"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:drawableLeft="@drawable/ic_info"
+            android:drawablePadding="4dp"
+            android:text="@string/about_application"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+        <com.za.caretogether.widgets.MMTextView
+            android:id="@+id/info_policy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:drawableLeft="@drawable/ic_shield"
+            android:drawablePadding="4dp"
+            android:text="@string/privacy_policy"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_account"
+        android:icon="@drawable/ic_medical_mask"
+        android:title="@string/account"/>
+    <item
+        android:id="@+id/nav_noti"
+        android:icon="@drawable/ic_notification"
+        android:title="@string/notification"/>
+    <item
+        android:id="@+id/nav_avoid"
+        android:icon="@drawable/ic_virus_warning"
+        android:title="@string/to_avoid"/>
+
+    <item
+        android:id="@+id/nav_situation"
+        android:icon="@drawable/ic_virus"
+        android:title="@string/situation"/>
+
+    <item
+        android:id="@+id/nav_call"
+        android:icon="@drawable/emergency_call"
+        android:title="@string/emergenc_call"/>
+
+</menu>

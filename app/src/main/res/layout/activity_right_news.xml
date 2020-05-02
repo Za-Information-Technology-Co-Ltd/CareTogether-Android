@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.RightNewsActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@drawable/color_green_blue">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/back_arrow_icon"/>
+
+        <com.za.caretogether.widgets.MMTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="သတင်းအမှန်စောင့်ကြည့်ရန်"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:background="#f2f2f2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.za.caretogether.widgets.MMTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:text="@string/right_news"
+                android:layout_margin="16dp"
+                android:textAlignment="center"
+                android:gravity="center_horizontal" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:background="@drawable/round_bg_white_10dp">
+
+                <com.za.caretogether.widgets.MMTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Facebook Page များ"/>
+
+                <com.za.caretogether.widgets.MMTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/fb_link_one"
+                    android:layout_marginLeft="16dp"
+                    android:textColor="@color/text_caretogether_2"
+                    android:textSize="16sp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="16dp"
+                    android:text="https://www.fb.com/ministryofhealthandsportsmyanmar"/>
+
+<!--                <com.za.caretogether.widgets.MMTextView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:id="@+id/fb_link_two"-->
+<!--                    android:layout_marginLeft="16dp"-->
+<!--                    android:textColor="@color/text_caretogether_2"-->
+<!--                    android:textSize="16sp"-->
+<!--                    android:layout_marginBottom="10dp"-->
+<!--                    android:layout_marginRight="16dp"-->
+<!--                    android:text="https://www.fb.com/khin.gyi.31"/>-->
+
+                <com.za.caretogether.widgets.MMTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/fb_link_three"
+                    android:layout_marginLeft="16dp"
+                    android:textColor="@color/text_caretogether_2"
+                    android:textSize="16sp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="16dp"
+                    android:text="https://www.fb.com/myanmarcdc"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:background="@drawable/round_bg_white_10dp">
+
+                <com.za.caretogether.widgets.MMTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Website Link များ"/>
+
+                <com.za.caretogether.widgets.MMTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/web_link_one"
+                    android:layout_marginLeft="16dp"
+                    android:textColor="@color/text_caretogether_2"
+                    android:textSize="16sp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="16dp"
+                    android:text="http://mohs.gov.mm/"/>
+
+                <com.za.caretogether.widgets.MMTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/web_link_two"
+                    android:layout_marginLeft="16dp"
+                    android:textColor="@color/text_caretogether_2"
+                    android:textSize="16sp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="16dp"
+                    android:text="https://www.who.int/"/>
+
+<!--                https://www.who.int/-->
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/round_bg_white_10dp">
+
+                <com.za.caretogether.widgets.MMTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="10dp"
+                    android:text="အရေးပေါ်ဆက်သွယ်ရန်ဖုန်းနံပါတ်များ"/>
+
+                <com.za.caretogether.widgets.MMTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:textColor="@color/text_caretogether_2"
+                    android:textSize="16sp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginRight="16dp"
+                    android:text="Public Health EmergencyOperation Center"/>
+
+                <com.za.caretogether.widgets.MMTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:id="@+id/emergency_phone_one"
+                    android:textColor="@color/black"
+                    android:drawablePadding="8dp"
+                    android:drawableLeft="@drawable/ic_phone_black"
+                    android:textSize="16sp"
+                    android:layout_marginBottom="14dp"
+                    android:layout_marginRight="16dp"
+                    android:text="067-3420268"/>
+
+                <com.za.caretogether.widgets.MMTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:textColor="@color/text_caretogether_2"
+                    android:textSize="16sp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginRight="16dp"
+                    android:text="Regional Development of Public Health(Yangon)"/>
+
+
+                <com.za.caretogether.widgets.MMTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/emergency_phone_two"
+                    android:layout_marginLeft="16dp"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:drawablePadding="8dp"
+                    android:drawableLeft="@drawable/ic_phone_black"
+                    android:layout_marginBottom="14dp"
+                    android:layout_marginRight="16dp"
+                    android:text="09-449001261, 09-794510057"/>
+
+                <com.za.caretogether.widgets.MMTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:textColor="@color/text_caretogether_2"
+                    android:textSize="16sp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginRight="16dp"
+                    android:text="Regional Development of Public Health(Mandalay)"/>
+
+                <com.za.caretogether.widgets.MMTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/emergency_phone_three"
+                    android:layout_marginLeft="16dp"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:drawablePadding="8dp"
+                    android:drawableLeft="@drawable/ic_phone_black"
+                    android:layout_marginBottom="14dp"
+                    android:layout_marginRight="16dp"
+                    android:text="09-2000344, 09-43099526"/>
+
+                <com.za.caretogether.widgets.MMTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:textColor="@color/text_caretogether_2"
+                    android:textSize="16sp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginRight="16dp"
+                    android:text="Health Quarantine Unit (Yangon International Airport)"/>
+
+                <com.za.caretogether.widgets.MMTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/emergency_phone_four"
+                    android:layout_marginLeft="16dp"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:drawablePadding="8dp"
+                    android:drawableLeft="@drawable/ic_phone_black"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="16dp"
+                    android:text="09-799983833"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

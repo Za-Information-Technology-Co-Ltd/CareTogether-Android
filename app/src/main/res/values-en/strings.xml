@@ -1,0 +1,62 @@
+<resources>
+    <string name="app_name">Care Together</string>
+    <string name="account">Account</string>
+    <string name="to_avoid">Dos and Dont\'s</string>
+    <string name="situation">Situation</string>
+    <string name="emergenc_call">Contacts</string>
+    <string name="notification">News</string>
+    <string name="waiting">Please Wait ...</string>
+    <string name="qr_code_scan">Your Unique ID</string>
+    <string name="delete">Delete Data</string>
+    <string name="clear_cache">Clear Your Stored Data</string>
+    <string name="touched_people">, you are connected with</string>
+    <string name="touched_people2">  users in the Care Together network</string>
+    <string name="title_account">Surveillance Dashboard</string>
+    <string name = "no_contact_with_user">According to your saved data, You are not close contact with confirm users </string>
+    <string name = "no_contact_with_confirm"> ✺ CareTogether has never been associated with someone with confirm users  on your phone.
+\n \n✺ You will be notified if someone you are connected to becomes a confirmed patient.
+\n \n✺ We encourage you to stay in your home as much as possible to continue this situation. </string>
+    <string name="about_application">About Application</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="require_internet">You need Internet Connection to acquire the information of people who have been quarantined or treated as positive patients</string>
+    <string name="require_internet2">You need Internet connection to access the relevant information.</string>
+    <string name="update_available">Latest Version</string>
+    <string name="permission_on">Please turn on your bluetooth and GPS to connect with other users</string>
+    <string name="update_available_2">It is available here</string>
+    <string name="title_file_permissions_off">File Permissions off!</string>
+    <string name="b1_file_permissions_off">Please give permission to store/achieve your data locally</string>
+    <string name="b2_file_permissions_off">Please change your file permission option in the setting to proceed</string>
+
+    <string name="title_location_sharing_off">Location Sharing off!</string>
+    <string name="b1_location_sharing_off">Your location sharing is currently disabled</string>
+    <string name="b2_location_sharing_off">Please give permission to share your location. Data will be saved in your local storage</string>
+
+    <string name="count_caretogether_touched">You have not yet connected to any positive patients within Care Together network</string>
+    <!--    <string name="identified_caretogether">နီးစပ်ဖူးသူများထဲမှ ဗိုင်းရပ်စ် ရောဂါပိုးတွေ့ရှိသူ (၁) ဦး တွေ့ရှိထားပါသည်။</string>-->
+    <string name="identified_caretogether">You are connected to</string>
+    <string name="identified_caretogether2">---- positive patient/s</string>
+    <string name="safe_one">1. Please help prevent the spread of virus by staying home</string>
+    <string name="safe_two">2. Please wear a mask if you must leave home</string>
+    <string name="safe_three">3. Please follow the guidelines of the Ministry of Health and Sports</string>
+    <string name="safe_four">4. If you have been in contact with a confirmed patient, please contact the emergency contact urgently</string>
+
+
+    <string name="right_news">Fake news are rampant on Facebook and prey on people\'s fears. Therefore, we advise you to read the following reliable news sources and facebook pages:</string>
+
+    <string name="label_mm_zawgyi">Zawgyi</string>
+    <string name="label_mm_uni">Myanmar Unicode</string>
+    <string name="label_choose_font">Choose a font</string>
+    <string name="label_zawgyi_or_uni">Choose Zawgyi or Unicode</string>
+    <string name="action_choose">Choose</string>
+
+    <string name="confirm_delete">Will You delete the data stored for controlling Covid-19 from your phone ?</string>
+    <string name="confirm_no">No</string>
+    <string name="confirm_yes">Yes</string>
+    <string name="sender_area">You can only send your data when you are in the area of designated hospital</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="msg_token_fmt" translatable="false">InstanceID Token: %s</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+
+
+</resources>

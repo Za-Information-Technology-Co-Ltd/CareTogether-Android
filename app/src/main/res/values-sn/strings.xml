@@ -1,0 +1,66 @@
+<resources>
+    <string name="app_name">Care Together</string>
+    <string name="account">ဢၶွင်ႉ</string>
+    <string name="to_avoid">တႃႇႁဵတ်းၸွမ်း/တႃႇငိူင်ႉဝႄႈ</string>
+    <string name="situation">သၢႆငၢႆ</string>
+    <string name="emergenc_call">ၾူင်းၶိုၵ်းၶၢၵ်း</string>
+    <string name="notification">ၶၢဝ်ႇ</string>
+    <string name="qr_code_scan">ကိုယ်ပိုင်ကုတ်နံပါတ်</string>
+    <string name="clear_cache">သိမ်းဆည်းထားသောဒေတာများဖျက်မည်</string>
+    <string name="delete">ဖျက်မည်</string>
+    <string name="confirm_no">မဖျက်ပါ</string>
+    <string name="confirm_yes">ဖျက်မည်</string>
+    <string name="confirm_delete">Covid 19 ရောဂါထိန်းချုပ်ရေးအတွက် \nစုဆောင်းရယူထားသော အချက်အလက်များကို \nဖုန်းအတွင်းမှ ဖျက်သိမ်းရန် အတည်ပြုမည်</string>
+    <string name="touched_people">သေ ,ၸဝ်ႈၵဝ်ႇၵွင်ႉသိုပ်ႇၺႃး ၾူင်း</string>
+    <string name="touched_people2"> လုၵ်ႈ ၸိူဝ်းမီးဝႆႉ တီႈၼႂ်း ၵွင်ႉသၢၼ် Care Together ၼၼ်ႉယဝ်ႉ။</string>
+    <string name="title_account">ကိုယ်ပိုင် ဗိုင်းရပ်စ်စောင့်ကြည့်ခန်း</string>
+    <string name="no_contact_with_user">CareTogether ကွန်ယက်အတွင်းမှ သုံးစွဲသူများနှင့် ချိတ်ဆက်ထားခြင်းမရှိသေးပါ။</string>
+    <string name="no_contact_with_confirm">✺ CareTogether မှ သင့်ဖုန်းထဲမှာ မှတ်သားထားသော အချက်အလက်များအရ ရောဂါပိုးရှိသူနှင့် နီးစပ်(ထိတွေ့)ခဲ့ဖူးခြင်း မရှိသေးပါ။
+\n\n✺ အကယ်၍ သင်နှင့် ချိတ်ဆက်ဖူးသူတဦးဦးမှ အတည်ပြုလူနာဖြစ်သွားပါက ဤ‌နေရာတွင် သတိပေး အကြောင်းကြားပေးသွားပါမည်။
+\n\n✺ ယခုအခြေအနေကို ထိန်းသိမ်းထားရန် အတတ်နိုင်ဆုံး သင့်အိမ်တွင်နေထိုင်ရန် တိုက်တွန်းအပ်ပါသည်။</string>
+    <string name="about_application">App အကြောင်း</string>
+    <string name="privacy_policy">အချက်အလက်ဆိုင်ရာမူဝါဒ</string>
+    <string name="require_internet">တွၼ်ႈတႃႇတေႁူႉလႆႈ ႁူဝ်ၼပ်ႉ ၵူၼ်းပဵၼ် ဢၼ်ထုၵ်ႇပႂ်ႉတူၺ်း ၸိူဝ်းဢၼ်လႆႈ တိူဝ်ႉမႅၼ်ႈမႃးၼၼ်ႉ တေလူဝ်ႇလႆႈ မီး ၵွင်ႉသၢၼ် ဢိၼ်ႇတႃႇၼႅတ်ႉယဝ်ႉ။</string>
+    <string name="require_internet2">တွၼ်ႈတႃႇတေတူၺ်းလႆႈ ၶေႃႈမုၼ်းဢၼ်ၵဵဝ်ႇလူၺ်ႈ ၵၢၼ်ၼႃႈတီႈၼၼ်ႉၵေႃႈ လူဝ်ႇလႆႈမီး ၵွင်ႉသၢၼ် ဢိၼ်ႇတႃႇၼႅတ်ႉယဝ်ႉ။</string>
+    <string name="update_available">နောက်ဆုံးထွက် ဗားရှင်း </string>
+    <string name="permission_on">App သုံးသူအချင်းချင်း ချိတ်ဆက်မှတ်သားနိုင်ရန်အတွက် Bluetooth / GPS များဖွင့်ထားရန် \nလိုအပ်နေပါသည်။</string>
+    <string name="update_available_2"> အား ရယူနိုင်ပါပြီ</string>
+    <string name="title_file_permissions_off">File Permissions off!</string>
+    <string name="b1_file_permissions_off">တႃႇသိမ်း/တႃႇဢဝ် ၶေႃႈမုၼ်း\n
+လုပ်ဆောင်ခွင့် မပေးထားပါ !</string>
+    <string name="b2_file_permissions_off">ၵၢၼ်တင်ႈ တွၼ်ႈတႃႇသိုပ်ႇႁဵတ်းၵႂႃႇၼႃႈ ထဲရှိ\n
+File Permission Option အား\n
+ပြောင်းလဲပေးရန် လိုအပ်ပါသည်။</string>
+
+    <string name="title_location_sharing_off">Location Sharing off!</string>
+    <string name="b1_location_sharing_off">ၵၢၼ်တင်ႈ တွၼ်ႈတႃႇၼႄပၼ်ဢွင်ႈတီႈၼၼ်ႉ \nဢမ်ႇလႆႈပိုတ်ႇဝႆႉ</string>
+    <string name="b2_location_sharing_off">တေလူဝ်ႇလႆႈပိုတ်ႇဝႆႉပၼ် \nၵၢၼ်တင်ႈ ဢၼ်ၼႄပၼ်ဢွင်ႈတီႈ</string>
+    <string name="waiting">ခေတ္တစောင့်ပါ  ...</string>
+    <string name="count_caretogether_touched">ၼႂ်းၵႃႈ ၵူၼ်းဢၼ်ၸိူဝ်း ၵွင်ႉၵၢႆၺႃးၸဝ်ႈၵဝ်ႇၼၼ်ႉ ဢမ်ႇပႆႇမီး ၵူၼ်းပဵၼ် ၸိူဝ်းဢၼ်ထုၵ်ႇမၵ်းမၼ်ႈဝႆႉ။</string>
+    <!--    <string name="identified_caretogether">နီးစပ်ဖူးသူများထဲမှ ဗိုင်းရပ်စ် ရောဂါပိုးတွေ့ရှိသူ (၁) ဦး တွေ့ရှိထားပါသည်။</string>-->
+    <string name="identified_caretogether">ၵူၼ်းပဵၼ် ဢၼ်ထုၵ်ႇမၵ်းမၼ်ႈဝႃႈ ပဵၼ်ၵူၼ်းပဵၼ် ၼႂ်းၵႃႈ ၸိူဝ်းဢၼ်ယၢမ်ႈၵွင်ႉၵၢႆတင်း ၸဝ်ႈၵဝ်ႇမႃးၼၼ်ႉ လႆႈႁၼ်ဝႆႉ ……, ၵေႃႉ။</string>
+    <string name="identified_caretogether2"></string>
+    <string name="safe_one">1။ ယူႇသဝ်းဝႆႉတီႈႁိူၼ်းသေ ၸွႆႈထႅမ် ယႃႇႁႂ်ႈမူင်ႈမႅင်းလႆႈ ၽႄႈၸွတ်ႇ။</string>
+    <string name="safe_two">2။ ပေႃးဝႃႈ တေဢွၵ်ႇတၢင်းၼွၵ်ႈ ဢမ်ႇဢွၵ်ႇဢမ်ႇပဵၼ်ၼႆ့ သႂ်ႇၽႅၼ်ႇတူမ်းၼႃႈ Mask သေ ဢွၵ်ႇ။</string>
+    <string name="safe_three">3။ ႁဵတ်းၸွမ်းၼင်ႇ ၶေႃႈၸီႉသင် ဢၼ်ပဵၼ် ထၢၼ်ၽွင်းလူင် ၽၢႆႇပၢႆးယူႇလီလႄႈ ပၢႆးလဵၼ်ႈ ၸီႉသင်ႇဝႆႉ။</string>
+    <string name="safe_four">4။ သင်ၸိူဝ်ႉဝႃႈ တိူဝ်ႉၸမ်ႈၺႃး ၵူၼ်းပဵၼ် ဢၼ်ထုၵ်ႇမၵ်းမၼ်ႈဝႆႉၼၼ်ႉၸိုင် ၶႅၼ်းတေႃႈ ၵပ်းသိုပ်ႇပၼ်ၶၢဝ်ႇၸူး မၢႆၾူင်းၸဝ်ႈၼႃႈတီႈ ၸိူဝ်းဢၼ်ၼႄဝႆႉပၼ်တီႈ ၼႃႈလိၵ်ႈမၢႆၾူင်းၶိုၵ်းၶၢၵ်းၼၼ်ႉသေၵမ်း။</string>
+
+    <!--    <string name="app_idea">ကနဦး ဗိုင်းရပ်စ် ကူးစက်မှုဖြစ်ပွားခံခဲ့ကြရသော အိမ်နီးချင်းနိုင်ငံများ၏ ကြုံတွေ့ခဲ့ရသည့် သင်ခန်းစာများကို လေ့လာခဲ့ပါသည်။ ထို့နည်းတူ မြန်မာနိုင်ငံသားများ ပါဝင်ပူးပေါင်းဆောင် ရွက်နိုင်မည့် (အချင်းချင်း အပြန်အလှန် ယုံကြည့်မှု ရရှိနိုင်မည့်) ဤနည်းစနစ်အား Za Information Technology Co.,Ltd. ၏ CTO ဖြစ်သူ ဦးရဲသူစိုး မှ စိတ်ကူးအကြံဉာဏ်ရရှိ၍ အကောင်အထည်ဖော်ပြုလုပ်ခဲ့ပါသည်။</string>-->
+
+    <string name="right_news">ယၢမ်းလဵဝ်ၼႆႉ ၵဵဝ်ႇလူၺ်ႈ လွင်ႈတၢင်းပဵၼ်မူင်ႈမႅင်းၼႆႉသေ လုၵ်ႉတီႈ ၼႃႈလိၵ်ႈၶၢဝ်ႇပွမ်၊ Facebook Page ဢၼ်ပွမ်သေ လႆႈမီးလွင်ႈပိုၼ်ၽႄႈ ၶၢဝ်ႇပွမ် ဢၼ်ယိူင်းဢၢၼ်းႁႂ်ႈ ၵူၼ်းမိူင်း လႆႈတူၵ်းၸႂ်လႆတိုၼ်ႇလႄႈ ၸိူဝ်းပဵၼ် ၼႃႈလိၵ်ႈၶၢဝ်ႇ လႄႈ Facebook Page ဢၼ်ပႃႈတႂ်ႈၼႆႉၵူၺ်း ပဵၼ်တီႈဢၼ် ပိုၼ်ၽၢဝ်ႇ ၶၢဝ်ႇဢၼ်မၢၼ်ႇမႅၼ်ႈမၼ်းၼႆ ၸင်ႇလႆႈပၼ်ၶၢဝ်ႇမီးၼင်ႇၼႆယဝ်ႉ။</string>
+
+    <string name="label_mm_zawgyi">ၸေႃႇၵျီႇၶူတ်ႉ</string>
+    <string name="label_mm_uni">မျၢၼ်ႇမႃႇယူၼီႇၶူတ်ႉ</string>
+    <string name="label_choose_font">လိူၵ်ႈပၼ်ၾွၼ်ႉ ဢၼ်တေၸႂ်ႉ။</string>
+    <string name="label_zawgyi_or_uni">လိူၵ်ႈပၼ်ၸေႃႇၵျီႇ (ဢမ်ႇၼၼ်) ယူႇၼီႇၶူတ်ႉ သေဢၼ်ဢၼ်။</string>
+    <string name="action_choose">လိူၵ်ႈ</string>
+
+
+    <string name="sender_area">ပေးပို့သူသည် သတ်မှတ်ဆေးရုံများ၏ ဧရိယာအတွင်း၌ရောက်ရှိနေမှသာ အချက်အလက်များကိုပေးပို့နိူင်မည် ဖြစ်ပါသည်။</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="msg_token_fmt" translatable="false">InstanceID Token: %s</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+
+
+</resources>

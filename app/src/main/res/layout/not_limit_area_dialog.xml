@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_margin="16dp"
+    android:padding="16dp"
+    android:background="@drawable/round_bg_white_10dp">
+
+    <com.za.caretogether.widgets.MMTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:text="@string/sender_area"
+        android:layout_marginTop="8dp"
+        android:textAlignment="center"
+        android:gravity="center_horizontal" />
+
+    <com.za.caretogether.widgets.MMTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/red"
+        android:textSize="15sp"
+        android:text="ပေးပို့သူသည် သတ်မှတ်ထားသောဆေးရုံများ၏ဧရိယာအတွင်းတွင် ရှိမနေသည့်အတွက်ကြောင့် ပေးပို့မှုမအောင်မြင်ပါ။"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:textAlignment="center"
+        android:gravity="center_horizontal" />
+
+    <com.za.caretogether.widgets.MMButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_not_limit_close"
+        android:text="ပိတ်မည်"
+        android:textSize="16sp"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginRight="36dp"
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/black"
+        android:background="@drawable/round_bg_btn_yellow_10dp"/>
+
+</LinearLayout>
